@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset UTF-8>
+<title>
+    prueba de javascript
+</title>
+
+<body>
+    <script>
+
+        // operadores ternarios
+
+        // 1
+        let edad = 9;
+
+        edad >= 18 ? console.log("es mayor de edad") : console.log("es menor de edad")
+        
+        // 2
+        let number = 45
+        number >= 0 ? console.log("es un numero positivo") : console.log("es un numero negativo")
+
+        // 3
+        let ocupacionCancha = true;
+        let nombreCancha = "bernabeu"
+
+        let mensaje = ocupacionCancha ? `la cancha ${nombreCancha} esta ocupada` : `la cancha ${nombreCancha} esta disponible`
+
+        console.log(mensaje)
+
+        // 4
+
+        const email = "ncuervo_175@cue.edu.co"
+        const contraseña = "4321"
+        
+        email == "ncuervo_175@cue.edu.co" && contraseña == "4321" ? console.log(`señor usuario ${email} bienvenido al sistema`) :  console.log(`acceso denegado escriba un usuario valido`)
+
+        // 5
+        
+        let color_Semaforo = "rojo";
+
+        color_Semaforo == "verde" ? console.log(`el semaforo esta en ${color_Semaforo} puede avanzar`) :
+        color_Semaforo == "rojo" ? console.log(`el semaforo esta en ${color_Semaforo} debe detenerse`) :
+        color_Semaforo == "amarillo" ? console.log(`el semaforo esta en ${color_Semaforo} preparese para avanzar`):  console.log(`el color ${color_Semaforo} no existe en el semaforo`)
+
+        // 6
+
+
+        // condicionales if else y else if
+
+        // 1
+
+        let temperatura = 60
+
+        if (temperatura >= 60) {
+            console.log(`su temperatura es de ${temperatura} tiene demasiada fiebre`)
+        }
+
+
+        // 2
+
+        tipoCliente = "normal"
+        if (tipoCliente == "normal") {
+            console.log(`Sera atentido en el modulo 1 ya que es un cliente ${tipoCliente}`);
+        }
+        else if(tipoCliente == "Preferencia1"){
+            console.log(`estan disponibles los mudulos 2 y 3 para su atencion`)
+        }
+        else{
+            console.log("Usted no es bienvenido en este lugar")
+        }
+
+        // 3
+
+        const base_Datos_Email = "ncuervo_175@cue.edu.co"
+        const base_Datos_Contraseña = "4530724"
+
+        let email_Ingresado = "ncuervo_175@cue.edu.co"
+        let constraseña_Ingresada = "4530724"
+
+        let nombre_Usuario = "juan"
+
+        if (base_Datos_Contraseña === constraseña_Ingresada && base_Datos_Email === email_Ingresado) {
+            console.log("Bienbenido a la plataforma de la universidad")
+            
+        }
+        else{
+            console.log("los datos que ingreso son incorrectos")
+        }
+
+
+        // 4
+
+        let derecha  = false;
+        let izquierda = true;
+        let arriba = false;
+        let abajo = false;
+
+        if (derecha) {
+            console.log("el robot se movera hacia la derecha") }
+
+        else if (izquierda) {
+            console.log("el robot se movera hacia la izquierda")
+
+        }
+
+        else if (arriba) {
+            console.log("el robot se movera hacia arriba")
+        }
+
+
+            else if (abajo) {
+            console.log("el robot se movera hacia abajo")
+        }
+
+        else{
+            console.log("el movimiento ingreaso no existe")
+        }
+
+
+        // 5
+        let encendido = true;
+        let velocidad = 120;
+
+        if (encendido) {
+            console.log("el carro esta encendido") 
+
+            if (velocidad == 0){
+            console.log("el carro esta detenido")
+        }
+
+        else if(velocidad > 0 && velocidad <= 120){
+            console.log("el carro esta en movimiento")
+        }
+
+        else if(velocidad > 0 && velocidad >= 120){
+            console.log("exceso de velocidad")
+        }
+
+        else{
+            console.log("encienda el carro")
+        }
+
+
+    }
+
+        // 6
+
+        let dia = "miercoles"
+        let clase = "algoritmos"
+
+        if(dia == "miercoles"){
+            console.log(`la clase de hoy es de ${clase}`)
+        }
+        
+            
+        
+        
+
+
+       
+
+    </script>
+    <p>
+       
+    </p>
+
+</body>
+
+</html>
